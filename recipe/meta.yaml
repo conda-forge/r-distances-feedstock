@@ -1,4 +1,4 @@
-{% set version = '0.1.6' %}
+{% set version = "0.1.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distances_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distances/distances_{{ version }}.tar.gz
-  sha256: af039783067fbaa25359be10bccce427155e7fc4a10052b2eb91ad802e9d41d8
+  sha256: 8d2a9e01591d265e6a4de830d49e80255270cc34bed6bcac346d94535c3d1bf6
 
 build:
   merge_build_host: True  # [win]
