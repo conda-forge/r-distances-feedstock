@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distances_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distances/distances_{{ version }}.tar.gz
-  sha256: be4bda79078774adc3cf2a69e3aaad2644a21daba81bb17f04c8f48f839ebc56
+  sha256: 58553a32388fd2bccea10ae1c3e695af86f017a86fe0a367a41c24223a8a7cbd
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,7 +46,7 @@ about:
   license: GPL-3.0-or-later
   summary: Provides tools for constructing, manipulating and using distance metrics.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
