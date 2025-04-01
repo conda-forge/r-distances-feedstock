@@ -1,4 +1,4 @@
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/distances_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/distances/distances_{{ version }}.tar.gz
-  sha256: 2dcb613492e27403fe9cb27fa798fb4f6d9e1fbe8f7d84d20eb9b369020e516c
+  sha256: 9981df80a12e7ce8ce13d7ab674e16ac50fe9d99de8b511cef11cb5b3529d872
 
 build:
   number: 0
